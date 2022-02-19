@@ -1,0 +1,62 @@
+$textSmall: 12px;
+$textBig: 1.5vw;
+$textPadding: 20px 5vw 70px 5vw;
+
+.mitro-footer{
+  margin-top: 0px;
+  margin-bottom: 100px;
+  h1{//kontakt
+font-family: Montserrat,sans-serif;
+font-weight: 100;
+margin-left: 20vw;
+font-size: 5vw;
+color:#808283;
+  }
+  .mitro-footer-name{
+    font-family: "Bebas Neue",cursive;
+    margin-left: 20vw;
+    font-size: 5vw;
+    margin-bottom: 0;
+    span{
+      margin-bottom: 0;
+      font-size: 8vw;
+      margin-right: 2vw;
+      font-weight: 800;
+      color:brown;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+  h2{
+    font-family: Montserrat,sans-serif;
+    margin-left: 20vw;
+    font-size: 12px;
+  }
+}
+// sm
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up) : md
+@media (min-width: 768px) {
+  .mitro-footer{
+    .mitro-contact{
+      .adr{
+        font-size: 4vw;
+        line-height: 1.5;
+      }
+      .adr1{
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up) :lg
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up) :xl
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up) :xxl
+@media (min-width: 1400px) {}

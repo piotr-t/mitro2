@@ -1,0 +1,42 @@
+.uslugi{
+  h2{
+    margin: 15vh 0vw 10vh 10vw;
+
+  }
+  li{
+    font-size: 2.5vw;
+    line-height: 2;
+    margin-bottom: 30px;
+    color: rgb(92, 88, 88);
+  }
+}
+
+
+// sm
+@media (min-width: 576px) {
+.uslugi{
+  h2{
+    margin: 15vh 0vw 10vh 10vw;
+    font-size: 5vw;
+  }
+  li{
+    font-size: 2.2vw;
+  }
+}}
+
+
+// Medium devices (tablets, 768px and up) : md
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up) :lg
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up) :xl
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up) :xxl
+@media (min-width: 1400px) {}

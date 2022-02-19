@@ -1,0 +1,111 @@
+<article class="articleContainer">
+<ng-container *ngTemplateOutlet="title"></ng-container>
+<!--   <ng-container *ngTemplateOutlet="autoryzowanySerwis"></ng-container> -->
+  <ng-container *ngTemplateOutlet="containerFive"></ng-container>
+  <ng-container *ngTemplateOutlet="czystePowietrze"></ng-container>
+  <ng-container *ngTemplateOutlet="chambers"></ng-container>
+  <app-contact></app-contact>
+</article>
+
+
+<ng-template #title>
+  <section class="container-fluid articleContainer__one">
+    <div class="row  align-items-center title">
+      <div class="col-12 col-sm-8 title__container">
+        <h1  class="title__container--text"><strong >AUTORYZOWANY SERWIS TERMET</strong></h1>
+      </div>
+      <div class="col-12 col-sm-4 title__container--logo">
+        <div class="containerLogo container-fluid">
+          <a class="row" href="https://www.termet.com.pl" alt="logo termet" target="blank"  >
+              <img class="col-6 col-sm-12" src="assets/images.png" alt="logo termet">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-template>
+
+<ng-template #autoryzowanySerwis>
+  <section  class="container-fluid articleContainer__two">
+    <div class="row justify-content-center articleContainer__two--title">
+        <h2>Atoryzowany Serwisant Gwarancyjny kotłów Termet w Białymstoku.</h2>
+    </div>
+    <div class="row articleContainer__two--text">
+      <div class="col-sm-8 textWrapper">
+        <p class="textWrapper__text">Termet jest producentem nowoczesnych rozwiązań w dziedzinie ogrzewania.
+          Firma produkuje kotły kontensacyjne i standardowe, oraz urzadzenia pomocnicze, do wykorzystania w centralnym ogrzewaniu i dostarczania ciepłej wody użytkowej.
+          Termet zapewnia standardową gwarancję na 24 miesiące. Warunkiem gwarancji jest zamontowanie urzadzenia przez Autoryzowanego Serwisanta Serwisanta i wykonanie Zerowego Uruchomienia urządzenia.
+          Wydłużenie okresu gwarancyjnego do 5 lub 7 lat w przypadku montażu przez Autoryzowanego Serwisanta lub Instalatora oraz dokonywania regularnych przeglądow serwisowych.</p>
+          <a class="textWrapper__link" href="https://www.termet.com.pl/" target="_blank" rel="noopener noreferrer"><p>Czytaj więcej...</p></a>
+      </div>
+      <div class="col-sm-4 hidden-sm-down">
+        <app-aside  class="d-none d-sm-block"></app-aside>
+      </div>
+    </div>
+  </section>
+</ng-template>
+
+<ng-template #containerFive>
+  <section  class="row articleContainer__five g-0 m-0 p-0" >
+    <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-6 mt-5 mb-5">
+          <h2 >Zdalna obsługa</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <p class="textZdalnaO">Jedną z największych zalet nowoczesnych systemów ogrzewania jest, coraz popularniejszy, system zdalnego sterowania kotłem.
+        Komfort jaki daje to rozwiązanie jest nie do przecenienia.
+        Możliwe jest korzystanie ze zdalnego regulatora oraz aplikacji, którą łatwo zainstalujesz na swoim telefonie. Ustawienie tygodniowego programu grzania.
+         Dodatkowo czujnik temperatury zewnętrznej usprawnia sterowanie systemem.
+      </p>
+    </div>
+    <div class="col-6">
+      <img src="assets/Pakiet EvoHome i Open-Therm.jpg" class="image1 float-start"  alt="remote">
+    </div>
+    <div class="col-5 imWrapper">
+    </div>
+  </section>
+</ng-template>
+
+<ng-template #czystePowietrze>
+  <section class="row articleContainer__six g-2">
+    <div class="col-12 mx-0 px-sm-5 py-5">
+      <h2 class="px-sm-5">Program czyste powietrze</h2></div>
+    <div class="col-5 col-sm-5 col-sm-5">
+      <img class="w-100  px-2  img3" src="assets/nieb2.png" alt="program czyste powietrze"></div>
+    <div class="col-7 col-sm-7">
+      <p class="px-2 tIdent">Program przewiduje zwrot części wydatków na wymianę starego kotła na paliwi stałe, na kociął spełniakjący wymagania Programu.</p>
+      <div class=" mx-0 px-0" >
+        <a class="textWrapper__link" href="https://nfosigw.gov.pl/czyste-powietrze/o-programie-czyste-powietrze-/" target="_blank" rel="noopener noreferrer"><p>Czytaj więcej...</p></a>
+      </div>
+    </div>
+  </section>
+</ng-template>
+
+
+<ng-template #chambers>
+  <section class="container-fluid articleContainer__three">
+    <div class="row articleContainer__three--title">
+      <h2 class="mx-5" >Montaż kotłów dużej mocy</h2>
+    </div>
+    <div class="row articleContainer__three--text">
+    <p class="px-3 tIdent">Firma specjalizuje się w montażu i serwisie gazowych kotłów dużych mocy. Wykonuje kompletną instalację centralnego
+       ogrzewania oraz zaopatrzenia w wodę dla przemysłu. Montaż armatury hydraulicznej. Wykonuje również usługi spawalnicze. </p>
+
+      <p class="px-3 tIdent">Firma prowadzi montaż instalacji ogrzewania w zakładach przemysłowych. Instalacje ogrzewania dla budynków
+        urzyteczności publicznej. Instalacje przeciwpożarowe. Prace montażowe urządzeń. Pełna instalacja hydrauliczna
+         zakładów usługowych. </p>
+    </div>
+
+
+<app-uslugi></app-uslugi>
+  </section>
+</ng-template>
+
+
+
+
+
+

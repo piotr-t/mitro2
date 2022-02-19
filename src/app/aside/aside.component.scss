@@ -1,0 +1,17 @@
+
+$titleFont: 3vw;
+$titleColor: black;
+
+
+aside{
+ // background-color: rgb(70, 70, 9);
+  h1{
+    font-size: 3vw;
+    color: $titleColor;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+@import "./../variables/variables.scss";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Righteous&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Play:700|Righteous&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Tajawal:200,300&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Armata&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Glegoo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Muli:900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700i&display=swap&subset=latin-ext');
+
+
+
+.page__content{
+  position: relative;
+  top:$headerHeight+($headerHeight/3)+10;
+}
+
+.Vis{
+  opacity: 0;
+  transition:opacity 500ms;
+}
+.noVis{
+  opacity:1;
+  transition:opacity 500ms;
+}

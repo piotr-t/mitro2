@@ -1,0 +1,100 @@
+@import "./../../variables/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap&subset=latin-ext');
+@import './../headerAnimations.scss';
+
+/*
+_____________________________________________________________________
+|                 |                                                  |
+|                 |__________________________________________________|
+
+|
+|
+|____________________________________________________________________
+
+*/
+
+//BIG
+
+
+  .headerContainer__Info--Animation{
+   height:60%;
+   // background-color: aquamarine;
+    .Animation{
+    //  background-color: orange;
+    }
+  }
+
+
+//SMALL
+
+
+    .headerContainer__Info--Animation{
+      height:30%;
+     // background-color: aquamarine;
+      .Animation{
+      //  background-color: orange;
+      }
+    }
+
+
+
+//------Common-------------
+
+      .headerContainer__Info--Tel{
+            .Tel__Wrapper--Number{
+              text-align: end;
+              .Number{
+                color:red;
+              }
+        }
+      }
+
+@media (max-width: 375px) {
+}
+
+@media (min-width: 576px) {
+  .headerContainer__Info--Tel{
+    .Tel{
+      visibility:visible;
+      background-image: url('~src/assets/call.png');
+      background-repeat: no-repeat;
+      background-position: contain;
+      background-size: contain;
+      animation: tel-logo 5s linear 2s infinite;
+      transform: scale(.7);
+      }
+      .Tel__Wrapper--Number{
+        text-align: start;
+  }
+    }
+  }
+
+      // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) {}
+
+      // Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+      // X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+      // XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+
+
+      .bigHeader{
+        p{font-size: 2.5vw;}
+      }
+
+      .smallHeader{
+        p{font-size: 2vw;}
+      }
+
+
+
+
+
+
+

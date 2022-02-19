@@ -1,0 +1,21 @@
+<header
+  appScroll classScroll1="headerContainer__Small" classScroll2="headerContainer__Big"
+  [@HeaderSize]="bigHeader"
+  class="container-fluid fixed-top headerContainer" >
+    <div class="row headerWrapper" >
+      <app-title class="col-5 align-self-center headerContainer__Title"></app-title>
+      <app-tel class="col-7 headerContainer__Info"></app-tel>
+        <div class="row headerContainer__Info--Slogan">
+          <div class="col-12 Slogan">
+            <h3 class="Slogan__text">INSTALACJE DLA TWOJEJ FIRMY</h3>
+          </div>
+        </div>
+      </div>
+  <app-baner></app-baner>
+  <div class="container-fluid fixed-top">
+    <div class="row  justify-content-center">
+      <div class=" anim col-8" appScroll classScroll1="anim1" classScroll2="anim2"></div>
+      <!--<app-svg class="col-7 col-sm-10 Animation fixed-top"></app-svg>-->
+    </div>
+  </div>
+</header>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit Wersja próbna) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35mm" height="21.5mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3500 2150"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:black;stroke-width:0.85;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
+    .str2 {stroke:#050505;stroke-width:0.85;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
+    .str0 {stroke:#AB2929;stroke-width:200;stroke-miterlimit:22.9256;stroke-dasharray:1000.000000}
+    .fil0 {fill:none}
+    .fil1 {fill:blue}
+    .fil3 {fill:lime}
+    .fil2 {fill:red}
+   ]]>
+  </style>
+ </defs>
+ <g id="house">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M990.51 1740.11c0,23.39 -18.96,42.34 -42.35,42.34m1738.37 0c-23.39,0 -42.35,-18.95 -42.35,-42.34m-852.32 -1353.84c7.34,-5.53 16.29,-8.53 25.48,-8.53 9.19,0 18.14,3 25.48,8.53m-852.13 546.26c0,-15.39 8.36,-29.57 21.82,-37.04m1609.85 0.03c13.46,7.47 21.82,21.65 21.82,37.04m-1653.67 807.55l0.18 -807.58m1653.49 0.03l0 807.55m-852.32 -1353.84l-781.97 510.8m-61.73 885.38l-768.23 0m2506.6 0l387.3 0m-1231.01 -1396.18l166.36 108.59 0 -182.57 440.98 0 0 470.72 172.2 112.51m-779.54 -509.25l0 0 0 0z"/>
+ </g>
+ <g id="arrow">
+  <metadata id="CorelCorpID_1Corel-Layer"/>
+  <polygon class="fil1 str1" points="2171.59,1257.57 2097.34,1339.76 2220.05,1372.63 "/>
+  <polygon class="fil2 str1" points="1708.39,950.82 1675.52,828.11 1600.06,927.57 "/>
+  <polygon class="fil3 str1" points="1476.28,1571.87 1566.09,1482.07 1600.06,1587.57 "/>
+  <path class="fil2 str1" d="M1702.94 930.44c28.59,-7.66 57.64,-11.41 87.24,-11.41 164.35,0 304.98,117.95 333.52,279.8l83.38 -14.64c-35.66,-202.34 -211.46,-349.84 -416.89,-349.84 -36.99,0 -73.43,4.72 -109.17,14.32l21.92 81.77z"/>
+  <g id="_1849462016160">
+   <path class="fil1" d="M1674.76 1575.81l-28.95 79.57c46.39,16.89 95.4,25.53 144.78,25.53 191.6,0 359.31,-128.71 408.9,-313.78l-524.73 208.68zm524.73 -208.68l-81.78 -21.91c-39.67,148.06 -173.84,251.02 -327.12,251.02 -39.51,0 -78.7,-6.91 -115.83,-20.43l524.73 -208.68zm-81.78 -21.91l0 0 0 0z"/>
+   <path id="_1" class="fil0 str2" d="M1674.76 1575.81l-28.95 79.57c46.39,16.89 95.4,25.53 144.78,25.53 191.6,0 359.31,-128.71 408.9,-313.78m0 0l-81.78 -21.91c-39.67,148.06 -173.84,251.02 -327.12,251.02 -39.51,0 -78.7,-6.91 -115.83,-20.43m442.95 -230.59l0 0 0 0z"/>
+  </g>
+  <g id="_1851011647184">
+   <path class="fil3" d="M1518.48 933.27l54.42 64.87c-76.69,64.34 -120.97,159.33 -120.97,259.43 0,89.83 35.68,175.96 99.19,239.47l-59.87 59.87 27.23 -623.64zm0 0c-95.86,80.45 -151.22,199.15 -151.22,324.3 0,112.26 44.6,219.95 123.99,299.34l27.23 -623.64zm32.64 563.77l0 0 0 0z"/>
+   <path id="_1_0" class="fil0 str1" d="M1518.48 933.27l54.42 64.87c-76.69,64.34 -120.97,159.33 -120.97,259.43 0,89.83 35.68,175.96 99.19,239.47l-59.87 59.87m27.23 -623.64c-95.86,80.45 -151.22,199.15 -151.22,324.3 0,112.26 44.6,219.95 123.99,299.34m59.87 -59.87l0 0 0 0z"/>
+  </g>
+  <ellipse class="fil0 str1" cx="1789.01" cy="1255.27" rx="444.5" ry="444.49"/>
+ </g>
+ <g id="pomocniczeCircle" visibility="hidden">
+  <metadata id="CorelCorpID_2Corel-Layer"/>
+  <g id="_1851011646576">
+   <path class="fil2" d="M1894.17 1381.46l-230.21 632.48 230.21 -632.48zm0 0l-432.64 -515.61 432.64 515.61zm0 0l662.86 -116.89 -662.86 116.89zm0 0l0 0 0 0z"/>
+   <path id="_1_1" class="fil0 str1" d="M1894.17 1381.46l-230.21 632.48m230.21 -632.48l-432.64 -515.61m432.64 515.61l662.86 -116.89m-662.86 116.89l0 0 0 0z"/>
+  </g>
+  <ellipse class="fil0 str1" cx="1894.17" cy="1381.46" rx="423.33" ry="423.34"/>
+  <ellipse class="fil0 str1" cx="1894.17" cy="1381.46" rx="338.66" ry="338.67"/>
+  <g id="_1851011645104">
+   <path class="fil2" d="M1894.17 1381.46l673.08 0 -673.08 0zm0 0l-336.54 -582.9 336.54 582.9zm0 0l-336.54 582.9 336.54 -582.9zm0 0l0 0 0 0z"/>
+   <path id="_1_2" class="fil0 str1" d="M1894.17 1381.46l673.08 0m-673.08 0l-336.54 -582.9m336.54 582.9l-336.54 582.9m336.54 -582.9l0 0 0 0z"/>
+  </g>
+  <g id="_1851011650672">
+   <path class="fil2" d="M1894.17 1381.46l650.15 174.21 -650.15 -174.21zm0 0l-174.2 -650.14 174.2 650.14zm0 0l-475.94 475.94 475.94 -475.94zm0 0l0 0 0 0z"/>
+   <path id="_1_3" class="fil0 str1" d="M1894.17 1381.46l650.15 174.21m-650.15 -174.21l-174.2 -650.14m174.2 650.14l-475.94 475.94m475.94 -475.94l0 0 0 0z"/>
+  </g>
+  <circle class="fil0 str1" cx="1894.17" cy="1381.46" r="381"/>
+  <circle class="fil0 str1" cx="1894.17" cy="1381.46" r="317.5"/>
+  <ellipse class="fil0 str1" cx="1894.17" cy="1381.46" rx="444.5" ry="444.49"/>
+  <animateTransform attributeName="transform" xlink:href="#arrow" attributeType="XML" type="rotate" from="360 10644.17 15156.46" to="0 10644.17 15156.46" dur="10s" repeatCount="indefinite"/>
+ </g>
+</svg>

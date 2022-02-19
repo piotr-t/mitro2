@@ -1,0 +1,57 @@
+@import "./../../variables/variables.scss";
+
+@keyframes bannerBig{
+0%{height: $headerHeight/5;}
+100%{height: $headerHeight/3;}
+}
+
+@keyframes bannerSmall{
+  0%{height: $headerHeight/3;}
+  100%{height: $headerHeight/6;}
+  }
+
+  .banner{
+    width: 100vw;
+  }
+
+
+
+.bannerBig{
+  animation: bannerBig $time linear 0s 1 ;
+  height: $headerHeight/3;
+
+}
+  .bannerSmall{
+    animation: bannerSmall $time linear 0s 1 ;
+    height: $headerHeight/6;
+    position: relative;
+    margin-top: 1vw;
+   // top:4.3vw
+  }
+  .banner-wrapper1, .banner-wrapper2, .banner-wrapper3, .banner-wrapper4{
+    background-size: cover;
+    background-position: center;
+  }
+  .banner-wrapper1{
+    background-image: url("./../../../assets/termet-kociol.jpg");
+    background-position: center 88%;
+  }
+  .banner-wrapper2{
+    background-image: url("./../../../assets/pompa-cyrkulacyjna-ferro-25-40-keller.jpg");
+  }
+  .banner-wrapper3{
+    background-image: url("./../../../assets/iko2_rodzaje_zlaczek_do_rur_miedzianych.jpg");
+  }
+  .banner-wrapper4{
+    background-image: url("./../../../assets/ogrzewanie_podlogowe2.jpg");
+  }
+
+
+
+  @media (max-width: 400px) {
+  .banner{
+    visibility: hidden;
+  }
+}
+
+

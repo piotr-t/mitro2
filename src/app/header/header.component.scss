@@ -1,0 +1,150 @@
+@import "./../variables/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap&subset=latin-ext');
+@import './headerAnimations.scss';
+
+
+header{
+ // height: 22vw;
+}
+//BIG
+.headerContainer__Big{
+  .headerWrapper{
+    .Slogan__text{font-size:3vw}
+  }
+}
+
+//SMALL
+
+.headerContainer__Small{
+  .headerWrapper{
+    // height:$headerHeight/3;
+    app-title{
+      height:$headerHeight/3.5
+    }
+    .headerContainer__Title{
+      h1{
+        text-align: center;
+        div{
+          font-size: 40%;
+        }
+      }
+    }
+  }
+
+  .headerContainer__Info--Slogan{
+    .Slogan{
+      font-size:2vw;
+      font-weight:200;
+      font-family: 'Roboto Mono', monospace;
+      width: 100%;
+      padding-left: 2vw;
+      //padding-bottom: $headerHeight/10;;
+      .Slogan__text{
+        font-size: 2vw;
+        padding-left: 2vw;
+        margin-left: 1vw;
+      }
+    }
+  }
+}
+
+//------Common-------------
+
+
+
+.headerContainer__Small, .headerContainer__Big{
+  background:$headerBackgroundColor;
+  .headerWrapper{
+    // height:$headerHeight ;
+
+    .headerContainer__Info{
+      .headerContainer__Info--Tel{
+        background-color:yellow;
+        .Tel{
+          background-color:blue;
+          .Tel__Wrapper{
+            .Tel__Wrapper--Ico{
+              .Ico{
+                top:10px;
+                width: 2vw;
+                display:inline-block;
+                animation: tel-logo 5s linear 2s infinite;
+                transform: scale(1);
+                position: relative;
+                height: 40%;
+              }
+            }
+            .Tel__Wrapper--Number{
+              .Number{
+                padding-left:1vw;
+                top:20px;
+                display:inline-block;
+                color:red;
+                font-size:2vw;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+.headerContainer__Info--Slogan{
+  .Slogan{
+    font-size:2vw;
+    font-weight:200;
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    padding-left: 2vw;
+    .Slogan__text{
+      padding-left: 2vw;
+      margin-left: 1vw;
+    }
+  }
+}
+
+.headerContainer{
+  width: 100vw;
+  .anim{
+    background-size: contain;
+    background-image: url('./../../assets/SVG/house.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .anim1{
+    margin-top: $headerHeight/10;
+    height:$headerHeight/2.5;}
+  .anim2{height:$headerHeight*.7}
+}
+
+
+@media (max-width: 375px) {
+  .headerContainer__Big{
+    height:$headerHeight;
+    .headerContainer__Info{}
+  }
+}
+
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
+
+
+
+

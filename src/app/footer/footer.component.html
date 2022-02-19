@@ -1,0 +1,49 @@
+<footer class="col-sm-12   no-gutters">
+  <div class="container-fluid  py-0 my-0 px-0 mx-0 footerContainer   no-gutters">
+    <ng-container *ngTemplateOutlet="companyLinks"></ng-container>
+    <ng-container *ngTemplateOutlet="rodo"></ng-container>
+    <ng-container *ngTemplateOutlet="madeBy"></ng-container>
+  </div>
+</footer>
+
+
+<ng-template #companyLinks>
+  <div class="row footerContainer__cooperation justify-content-center">
+
+    <div class="col-sm-3 col-8 footerContainer__cooperation--logo1 logo">
+      <a href="https://www.termet.com.pl" alt="logo termet" target="blank">
+        <img src="assets/termet.png" alt="logo Termet">
+      </a>
+    </div>
+    <div class="col-sm-3 col-8  footerContainer__cooperation--logo2 logo">
+      <a href="https://www.vaillant.pl/klienci-indywidualni/" target="blank"  name="Vaillant" rel="noopener">
+        <img src="assets/vaillant.jpg" alt="logo Vaillant" name="Vaillant"></a>
+    </div>
+    <div class="col-sm-3 col-8  footerContainer__cooperation--logo3 logo">
+      <a href="https://www.buderus.com/pl/pl/" target="blank"  name="Buderus" rel="noopener">
+        <img src="assets/buderus.jpg" alt="logo Buderus" name="Buderus"></a>
+    </div>
+    <div class="col-sm-3 col-8 mx-auto footerContainer__cooperation--logo4 logo">
+      <a href="http://www.refleks.pl/" target="blank"  name="hurtowania Refleks" rel="noopener">
+        <img src="assets/refleks.png" alt="logo Refleks" name="hurtowania Refleks"></a>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #rodo>
+  <div class="row footerContainer__infoRODO">
+    <div class="col-sm-12 footerContainer__infoRODO--info">
+    </div>
+</div>
+</ng-template>
+
+<ng-template #madeBy>
+  <div class="row  no-gutters footerContainer__infoPage">
+    <div class="col-sm-6 footerContainer__infoPage--date">12.01.2020</div>
+    <div class="col-sm-6 footerContainer__infoPage--contact">
+      <p>Created by troc.piotr@gmail.com</p>
+      <p>https://github.com/piotr-t/MITRO</p>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</div>
+</ng-template>

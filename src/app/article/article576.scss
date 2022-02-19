@@ -1,0 +1,149 @@
+.articleContainer{
+  //====================================
+  .articleContainer__one{
+    margin-bottom: 20vw;
+    .title{
+      .title__container{
+        .title__container--text{
+          padding-left: 5vw;
+          font-size: 3.5vw;
+          h1{
+            strong{
+              font-size: 20vw;
+            }}
+        }
+        .title__container--logo{
+          .containerLogo{
+            a{
+              width: 100%;
+              height: 100%;
+              img{
+                position: relative;
+                width: 80%;
+                height: 80%;}
+            }
+          }
+        }
+      }
+    }
+  }
+  .articleContainer__two{
+    margin-bottom: 0px;
+    .articleContainer__two--title{
+      margin-bottom: 20px;
+      h2{font-size: 3vw;}
+    }
+    .articleContainer__two--text{
+      .textWrapper{
+        clear: both;
+        padding: 20px 1vw 70px 5vw;
+        .textWrapper__text{
+          font-size: $textBig;
+          text-indent: 5vw;
+          clear: both;
+        }
+        .textWrapper__link{
+          clear: both;
+          p{
+            font-size: $textBig - .3vw;
+          }
+        }
+      }
+    }
+  }
+  //============================================
+
+  .articleContainer__three{
+    margin-top:10vh;
+    h2{font-size: 5vw;}
+    p{
+      color: red;
+    }
+
+
+  }
+  //===============================================
+ .articleContainer__three, .articleContainer__four{
+    margin-top: 10vw;
+    img{
+      width:50%;
+      float: left;
+    }
+    .b{
+      clear: both;
+    }
+    .articleContainer__three--title, .articleContainer__four--title{
+      display: inline-block;
+      margin-left: 10vw;
+    }
+    .articleContainer__three--text, .articleContainer__four--text{
+      padding-top: 5vw;
+      padding-left: 7vw;
+      padding-right: 10vw;
+      font-size: 1.5vw;
+      text-indent: 5vw;
+    }
+  }
+  //===========================================================
+  .articleContainer__five{
+    margin-top: 10vh;
+    width: 100%;
+    h2{
+      font-size: 3.5vw;
+      margin: 3vh 0vw 10vh 15vw;
+    }
+    .textZdalnaO{
+      text-indent: 5vw;
+      font-size: $textBig;
+      padding: $textPadding;
+      width: 100%;
+    }
+    .image1{
+      width: 100%;
+    }
+
+    .svgImage{
+      float:right;
+      transform: scale(3);
+      padding-top: 20%;
+      width:100%;
+      background-color: brown;
+      position: relative;
+    }
+  }
+
+
+  //=================================================
+  .articleContainer__six{
+    margin-top: 15vh;
+    margin-bottom:10vh;
+    h2{
+      font-size: 3.5vw;
+    }
+    p{
+      font-size: $textBig;
+      text-indent: 1.5vw;
+    }
+  }
+
+}
+
+h3{
+  font-size: 3vw;
+}
+
+li{
+  margin-bottom: 30px;
+  color: rgb(92, 88, 88);
+}
+
+ .textZdalnaO{
+  text-indent: 5vw;
+  font-size: $textBig;
+  padding: $textPadding;
+  width: 100%;
+}
+
+.tIdent{
+  text-indent: 2vw;
+}

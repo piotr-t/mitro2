@@ -1,0 +1,134 @@
+//$fontSizeSmall:(10px+1vw);
+
+
+
+
+@media (max-width: 576px) {
+  .footerContainer__infoPage--contact{
+    text-align: right;
+    padding-right: 5vw;
+    font-style: italic;
+    p{
+      font-size:max(10px, 2vw);
+      margin: 4px;
+    }
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .footerContainer__cooperation{
+    height: 90px;
+    .logo{
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      img{
+        height:100px;
+       margin-left:auto ;
+      }
+      }
+  }
+  .footerContainer__infoPage--contact{
+    p{
+      font-size:max(12px, min(18px, 2vw) );
+    }
+  }
+
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+  .footerContainer__cooperation{
+    height: 150px;
+    .logo{
+      height: 80px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      img{
+        height:120px;
+       margin-left:auto ;
+      }
+      }
+  }
+
+}
+
+
+footer{
+  background-color: rgb(20, 20, 29) ;
+  .footerContainer__cooperation{
+    background-color:#dbdbdf;
+    .footerContainer__cooperation--logo1, .footerContainer__cooperation--logo2, .footerContainer__cooperation--logo3, .footerContainer__cooperation--logo4{
+      a{
+        width: 100%;
+      height: 100%;
+      img{
+        width: 60%;
+        height: 100%;
+      }
+    }
+    }
+  }
+
+  .footerContainer__infoRODO, .footerContainer__infoPage{
+    color: rgba($color: #f7f4f4, $alpha: 1.0);
+    padding-bottom: 5px;
+    .footerContainer__infoRODO--info{
+      background-color: rgb(41, 48, 45);
+      margin-left: 0px;
+      p{padding-top: 1%;
+        padding-left: 5vw;
+      font-size: 1.2vw;}
+    }
+    .footerContainer__infoRODO{
+      background-color: rgb(71, 71, 187) ;
+    }
+    .footerContainer__infoPage{
+      background-color: rgb(47, 47, 63) ;
+    }
+    .footerContainer__infoPage--date{
+      font-size: 1vw;
+      padding-left: 5vw;
+      font-style: italic;
+    }
+    .footerContainer__infoPage--contact{
+      text-align: right;
+      padding-right: 5vw;
+      font-style: italic;
+      p{
+        font-size:max(10px, 0.7vw);
+        margin: 4px;
+      }
+    }
+  }
+  .footerContainer__cooperation--logo1{padding-left:5vw;};
+  .footerContainer__cooperation--logo1,.footerContainer__cooperation--logo2,.footerContainer__cooperation--logo3,.footerContainer__cooperation--logo4{
+    height: 5vh;
+    margin-top: .2vh;
+    margin-bottom: .5vh;
+    img{
+     margin:auto ;
+    }
+  }
+}
+.logo{
+justify-content: center;
+
+}

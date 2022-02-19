@@ -1,0 +1,33 @@
+@import "./../../variables/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500i&display=swap&subset=latin-ext');
+@import './../headerAnimations.scss';
+
+
+
+.c1{
+  font-size: 7vw;
+  & div{
+    display: inline-block;
+  }
+  & :nth-child(1){color: red;}
+  @for $i1 from 1 through 5 {
+   & :nth-child(#{$i1}){
+     @include animation-delay1((.2s + ($i1 * 0.05)));
+   }
+ }
+}
+
+
+.c2{
+  font-size: 10vw;
+  & div{
+    display: inline-block;
+  }
+  & :nth-child(1){color: red;}
+  @for $i1 from 1 through 5 {
+   & :nth-child(#{$i1}){
+     @include animation-delay((.2s + ($i1 * 0.05)));
+   }
+ }
+}
