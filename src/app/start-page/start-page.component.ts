@@ -17,7 +17,7 @@ export class StartPageComponent implements OnInit, AfterViewInit {
 
   }
   ngAfterViewInit(): void{
-    ///console.log(this.containerr.nativeElement.clientHeight);
+    // console.log(this.containerr.nativeElement.clientHeight);
    // this.evEmiter.emit(this.containerr.nativeElement.clientHeight);
 
   }

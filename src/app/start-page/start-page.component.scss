@@ -1,3 +1,5 @@
+@import "./../variables/variables.scss";
+
 @media (max-width: 576px){
   .img1{
     top:-100px;
@@ -40,43 +42,60 @@
   position: absolute;
   width:100%;
   height: 100%;
-  opacity: .95;
   overflow: hidden;
   background-color: rgb(221, 224, 224);
-  .img1{
-    position: absolute;
-    //top: 2vh;
-    left: 7vw;
-    width: 45%;
-   // height:30%;
-    z-index: 100;
-  }
- .img2{
 
-   position: absolute;
-   z-index: 99;
-   //width: 100%;
-   height: 100%;
- }
-  .servicesContainer{
-    position:absolute;
-    //top: 50%;
-    left: 10%;
-    width: 60%;
-    opacity:1;
-    z-index:100;
+  .list_container{
+    border: 1px solid rgba(46, 46, 150, 0.342);
+    border-radius: 15px;
+  }
+  .contact_container{
+    min-height: 20vh;
+    border: 1px solid rgba(46, 46, 150, 0.342);
+    border-radius: 10px;
+    p{
+      margin-left: 5vw;
+    }
+    .p1{
+      font-weight: 500;
+      font-style: italic;
+      margin-left: 7vw;
+    }
+  }
+
+  ul{
+    list-style-type: circle;
+  }
 
     li{
-      margin-top: 2vw;
-      font-size:max(14px,2vw) ;
-      font-weight: 800;
+      margin-top: 1.2vw;
+      font-size:max(14px,1.2vw) ;
+      font-weight: 500;
     }
     a{
-      padding-top: 20vw;
+      padding-top: 2vw;
       margin-left: 30vw;
-      font-size: max(14px,2vw);
+      font-size: max(14px,1vw);
+      font-style: italic;
     }
-  }
+
+}
+
+h1{
+  font-size: 10vw;
+  color: $headerColor1;
+  padding-left: 10vw;
+}
+.sp{
+  font-size: 2.2vw;
+  padding-left:.5vw;
+  letter-spacing: .1px;
+}
+.sp1{
+  font-size: 2vw;
+}
+h3{
+  padding-left: 5vw;
 }
 
 
