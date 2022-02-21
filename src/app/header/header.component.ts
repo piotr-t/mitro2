@@ -30,12 +30,12 @@ export class HeaderComponent implements OnInit, OnChanges {
 
 
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.bigHeader = 'Big';
   }
 
 
-  ngOnChanges() {
+  ngOnChanges(): void {
 
 
   }

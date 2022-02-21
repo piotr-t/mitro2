@@ -10,8 +10,14 @@
   & div{
     display: inline-block;
   }
-  & :nth-child(1){color: red;}
-  @for $i1 from 1 through 5 {
+  & :nth-child(1){
+    //color: red;
+  }
+  & :nth-child(6){
+    height: 5vw;
+    p {font-size: 2vw; color: blue; transform: translateY(-20px)}
+  }
+  @for $i1 from 1 through 6 {
    & :nth-child(#{$i1}){
      @include animation-delay1((.2s + ($i1 * 0.05)));
    }
@@ -25,7 +31,8 @@
     display: inline-block;
   }
   & :nth-child(1){color: red;}
-  @for $i1 from 1 through 5 {
+  & :nth-child(6){font-size: 1.5vw;}
+  @for $i1 from 1 through 6 {
    & :nth-child(#{$i1}){
      @include animation-delay((.2s + ($i1 * 0.05)));
    }

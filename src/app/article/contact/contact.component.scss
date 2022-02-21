@@ -12,7 +12,7 @@ margin-left: 20vw;
 font-size: 5vw;
 color:#808283;
   }
-  .mitro-footer-name{
+  .mitro__contact--company{
     font-family: "Bebas Neue",cursive;
     margin-left: 20vw;
     font-size: 5vw;
@@ -20,11 +20,16 @@ color:#808283;
     span{
       margin-bottom: 0;
       font-size: 8vw;
-      margin-right: 2vw;
+      margin-right: .2vw;
       font-weight: 800;
       color:brown;
       -webkit-background-clip: text;
       background-clip: text;
+      &.sp_z{
+        margin-right: 2vw;
+        font-size: 2vw;
+        color: rgb(194, 62, 62);
+      }
     }
   }
   h2{
@@ -49,6 +54,8 @@ color:#808283;
     }
   }
 }
+
+
 
 // Large devices (desktops, 992px and up) :lg
 @media (min-width: 992px) {

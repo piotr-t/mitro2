@@ -7,9 +7,7 @@ import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, ViewChild }
 })
 export class StartPageComponent implements OnInit, AfterViewInit {
 
-  evEmiter = new EventEmitter<number>();
 
-  @ViewChild('container')containerr: ElementRef;
 
   constructor() { }
 
@@ -17,8 +15,7 @@ export class StartPageComponent implements OnInit, AfterViewInit {
 
   }
   ngAfterViewInit(): void{
-    // console.log(this.containerr.nativeElement.clientHeight);
-   // this.evEmiter.emit(this.containerr.nativeElement.clientHeight);
+
 
   }
 

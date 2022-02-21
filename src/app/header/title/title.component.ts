@@ -12,7 +12,7 @@ export class TitleComponent implements OnInit {
   @Input()
   smalHeader;
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

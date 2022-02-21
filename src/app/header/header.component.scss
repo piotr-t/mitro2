@@ -20,15 +20,9 @@ header{
   .headerWrapper{
     // height:$headerHeight/3;
     app-title{
-      height:$headerHeight/3.5
+      height:$headerHeight/3.5;
     }
     .headerContainer__Title{
-      h1{
-        text-align: center;
-        div{
-          font-size: 40%;
-        }
-      }
     }
   }
 
