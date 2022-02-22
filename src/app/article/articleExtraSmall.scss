@@ -12,11 +12,9 @@ $textPadding: 20px 5vw 70px 5vw;
           padding-left: 6vw;
           font-size: 6vw;
           text-align: center;
-          h1{
             strong{
               font-size: 5vw;
             }
-          }
         }
       }
       .title__container--logo{
@@ -96,6 +94,9 @@ $textPadding: 20px 5vw 70px 5vw;
 
 %articleContainerSix{
   .articleContainer__six{
+    h2{
+      font-size:max(14px, 5vw);
+    }
     p{
       font-size: $textSmall;
     text-indent: 5vw;}
@@ -111,7 +112,8 @@ $textPadding: 20px 5vw 70px 5vw;
   .articleContainer__three{
     margin-top:10vh;
     h2{
-      font-size: $textSmall*2;
+      align-content: center;
+      font-size:max(14px, 5vw);
       margin: 30px;}
     p{
       text-indent: 5vw;
