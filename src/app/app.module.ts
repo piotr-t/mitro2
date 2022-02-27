@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { StartSvgComponent } from './start-page/start-svg/start-svg.component';
 import { Article1Component } from './article/article1/article1.component';
+import { Article2Component } from './article/article2/article2.component';
 
 
 
@@ -47,7 +48,8 @@ import { Article1Component } from './article/article1/article1.component';
     HomeComponent,
     StartPageComponent,
     StartSvgComponent,
-    Article1Component
+    Article1Component,
+    Article2Component
 
   ],
   imports: [
