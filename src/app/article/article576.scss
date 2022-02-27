@@ -93,7 +93,8 @@
     }
     .textZdalnaO{
       text-indent: 5vw;
-      font-size: $textBig;
+      font-size: max(8px, .1vw);
+      color: red;
       padding: $textPadding;
       width: 100%;
     }
@@ -138,8 +139,9 @@ li{
 
  .textZdalnaO{
   text-indent: 5vw;
-  font-size: $textBig;
+  font-size: max(8px, .1vw);
   padding: $textPadding;
+  color: red;
   width: 100%;
 }
 

@@ -13,6 +13,13 @@
 
 
 @media (min-width: 768px){
+  .startPageContainer{
+    position: absolute;
+    // width:100vw;
+    height: 100vh;
+    overflow: hidden;
+
+  }
   a{
     font-size: 14px !important;
   }
@@ -32,10 +39,7 @@
 
 
 .startPageContainer{
-  position: absolute;
-  // width:100vw;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   background-color: rgb(221, 224, 224);
 
   .list_container{
@@ -90,9 +94,9 @@ h1{
   font-size: 2vw;
 }
 
-.owner__name{
+/*.owner__name{
   text-align: center;
   font-size: max(14px, 4vw);
-}
+}*/
 
 
