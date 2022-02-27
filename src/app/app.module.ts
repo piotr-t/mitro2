@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { StartSvgComponent } from './start-page/start-svg/start-svg.component';
+import { Article1Component } from './article/article1/article1.component';
 
 
 
@@ -45,7 +46,8 @@ import { StartSvgComponent } from './start-page/start-svg/start-svg.component';
     UslugiComponent,
     HomeComponent,
     StartPageComponent,
-    StartSvgComponent
+    StartSvgComponent,
+    Article1Component
 
   ],
   imports: [

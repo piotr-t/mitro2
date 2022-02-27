@@ -1,10 +1,10 @@
-<article class="articleContainer">
-<ng-container *ngTemplateOutlet="title"></ng-container>
-<!--   <ng-container *ngTemplateOutlet="autoryzowanySerwis"></ng-container> -->
-  <ng-container *ngTemplateOutlet="containerFive"></ng-container>
-  <ng-container *ngTemplateOutlet="czystePowietrze"></ng-container>
-  <ng-container *ngTemplateOutlet="chambers"></ng-container>
-  <app-contact></app-contact>
+<article class="articleContainer container-fluid g-0 m-0 p-0">
+  <!--<ng-container *ngTemplateOutlet="title"></ng-container>-->
+  <!--   <ng-container *ngTemplateOutlet="autoryzowanySerwis"></ng-container> -->
+  <app-article1></app-article1>
+  <!--<ng-container *ngTemplateOutlet="czystePowietrze"></ng-container>-->
+  <!--<ng-container *ngTemplateOutlet="chambers"></ng-container>-->
+  <!--<app-contact></app-contact>-->
 </article>
 
 
@@ -45,29 +45,6 @@
   </section>
 </ng-template>
 
-<ng-template #containerFive>
-  <section  class="row articleContainer__five g-0 m-0 p-0" >
-    <div class="col-12">
-      <div class="row justify-content-center">
-        <div class="col-6 mt-5 mb-5">
-          <h2 class="zdal">Zdalna obsługa</h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <p class="textZdalnaO">Jedną z największych zalet nowoczesnych systemów ogrzewania jest, coraz popularniejszy, system zdalnego sterowania kotłem.
-        Komfort jaki daje to rozwiązanie jest nie do przecenienia.
-        Możliwe jest korzystanie ze zdalnego regulatora oraz aplikacji, którą łatwo zainstalujesz na swoim telefonie. Ustawienie tygodniowego programu grzania.
-         Dodatkowo czujnik temperatury zewnętrznej usprawnia sterowanie systemem.
-      </p>
-    </div>
-    <div class="col-6">
-      <img src="assets/Pakiet EvoHome i Open-Therm.jpg" class="image1 float-start"  alt="remote">
-    </div>
-    <div class="col-5 imWrapper">
-    </div>
-  </section>
-</ng-template>
 
 <ng-template #czystePowietrze>
   <section class="row articleContainer__six g-2">

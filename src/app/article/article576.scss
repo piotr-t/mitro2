@@ -93,10 +93,9 @@
     }
     .textZdalnaO{
       text-indent: 5vw;
-      font-size: max(8px, .1vw);
-      color: red;
-      padding: $textPadding;
-      width: 100%;
+      font-size: max(8px, 0.1vw);
+      color: rgb(102, 53, 53);
+
     }
     .image1{
       width: 100%;
@@ -139,10 +138,10 @@ li{
 
  .textZdalnaO{
   text-indent: 5vw;
-  font-size: max(8px, .1vw);
-  padding: $textPadding;
+  font-size: max(8px, 0.1vw);
+
   color: red;
-  width: 100%;
+
 }
 
 .tIdent{
@@ -150,9 +149,7 @@ li{
   font-size:3vw !important;
 }
 
-.articleContainer__five{
 
-}
 .zdal{
   font-weight:bold;
   font-size: 3.5vw !important;
