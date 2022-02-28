@@ -1,2 +1,2 @@
-CSS baset Bootstrap
-Project baset Angular11
+CSS based Bootstrap
+Project based Angular11
