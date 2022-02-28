@@ -16,7 +16,16 @@
 @media (min-width: 576px) {
   .tIdent{
     text-indent: 5vw;
-    font-size:max (10px, 1.5vw);
+    font-size: max(10px, 1.7vw);
+    letter-spacing: .2vw;
+    &::first-line{
+      line-height: .1;
+    }
+    &::first-letter{
+      color: #212529;
+      font-size: 2vw;
+      letter-spacing: .1vw;
+    }
 
   }
 }
