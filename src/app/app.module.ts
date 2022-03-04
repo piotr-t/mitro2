@@ -27,6 +27,7 @@ import { StartSvgComponent } from './start-page/start-svg/start-svg.component';
 import { Article1Component } from './article/article1/article1.component';
 import { Article2Component } from './article/article2/article2.component';
 import { Article3Component } from './article/article3/article3.component';
+import { FormMitroComponent } from './form-mitro/form-mitro.component';
 
 
 
@@ -52,7 +53,8 @@ import { Article3Component } from './article/article3/article3.component';
     StartSvgComponent,
     Article1Component,
     Article2Component,
-    Article3Component
+    Article3Component,
+    FormMitroComponent
 
   ],
   imports: [

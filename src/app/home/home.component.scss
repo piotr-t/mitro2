@@ -23,16 +23,12 @@
 
 
 
-.page__content{
-  position: relative;
-  top:$headerHeight+($headerHeight/3)+10;
-}
-
-.Vis{
-  opacity: 0;
-  transition:opacity 500ms;
-}
-.noVis{
-  opacity:1;
-  transition:opacity 500ms;
+.app__container{
+  min-height: 100vh;
+  .content-container{
+    min-height: (100vh - $headerHeight);
+  }
+  .row1{
+    height: $headerHeight;
+  }
 }

@@ -1,9 +1,11 @@
-//$fontSizeSmall:(10px+1vw);
+@import "./../variables/variables.scss";
+
+footer{
+  height: $footerHeight;
+}
 
 
-
-
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .footerContainer__infoPage--contact{
     text-align: right;
     padding-right: 5vw;
@@ -131,4 +133,4 @@ footer{
 .logo{
 justify-content: center;
 
-}
+}*/
