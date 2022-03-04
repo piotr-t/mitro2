@@ -1,1 +1,29 @@
-<p>form-mitro works!</p>
+<div class="row p-0 m-0 g-0"  style="background-color: rgb(135, 180, 149)">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <div class="row">
+      <div class="col-12">
+        <label for="name">Imię*</label>
+        <input name="name" type="text">
+      </div>
+      <div class="col-12">
+        <label for="name1">Nazwisko/Nazwa firmy*</label>
+        <input name="name1" type="text">
+      </div>
+      <div class="col-12">
+        <label for="tresc">Wiadomość</label>
+        <textarea name="tresc" type="text"></textarea>
+      </div>
+      <div class="col-12">
+        <label for="download">Dodaj plik</label>
+        <input  #inpp class="custom-file-inputt" name="download" type="file" (change)="view($event.target.files)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>*pola wymagane</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+</div>

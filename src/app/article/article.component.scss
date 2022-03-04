@@ -7,6 +7,11 @@
 @import "article1200.scss" screen and (min-width: 1200px);// X-Large devices (large desktops, 1200px and up) :xl
 @import "article1400.scss" screen and (min-width: 1400px);// XX-Large devices (larger desktops, 1400px and up) :xxl
 
+.article__text{
+  text-indent: 2vw;
+  font-size: max(12px, 1.5vw);
+}
+
 
 
 

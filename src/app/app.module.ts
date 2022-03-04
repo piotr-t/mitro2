@@ -54,7 +54,7 @@ import { FormMitroComponent } from './form-mitro/form-mitro.component';
     Article1Component,
     Article2Component,
     Article3Component,
-    FormMitroComponent
+    FormMitroComponent,
 
   ],
   imports: [

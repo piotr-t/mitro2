@@ -6,6 +6,12 @@
 
 header{
   height: $headerHeight;
+  .logo{
+    background-image: url('./../../assets/Screenshot(46).png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
  }
 
 /*

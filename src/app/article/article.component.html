@@ -1,5 +1,12 @@
-
-
+<div class="row p-0 m-0 g-0 row-cols-2">
+  <div *ngFor="let item of items;index as i" class="col-6 p-0 m-0 g-0">
+    <div class="row px-0 py-2 m-0 g-0">
+      <div class="col-1"></div>
+      <div class="col-10 p-0 m-0 g-0 article__text" [ngStyle]="{'opacity': 0.5 + i/10, 'color':'white', 'background-color': 'black'}">{{item}}</div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</div>
 
 
 

@@ -1,0 +1,9 @@
+
+
+.custom-file-inputt{
+  border: 2 px solid black;
+}
+.custom-file-input::before{
+  content:'ok działa';
+  opacity: 1;
+}
