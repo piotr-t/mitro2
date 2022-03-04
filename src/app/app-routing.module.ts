@@ -5,10 +5,10 @@ import { StartPageComponent } from './start-page/start-page.component';
 
 
 const routes: Routes = [
-  { path: 'Page', component: HomeComponent },
-  { path: 'Home', component: StartPageComponent },
-  { path: '', redirectTo: '/Home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/Home', pathMatch: 'full'  },
+  { path: '', component: HomeComponent },
+  // { path: 'Home', component: StartPageComponent },
+  // { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/', pathMatch: 'full'  },
 ];
 
 @NgModule({
