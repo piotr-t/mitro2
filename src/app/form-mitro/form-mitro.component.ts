@@ -21,6 +21,10 @@ console.log('inp1', this.inp1);
 
   view(e): void{
     console.log('inprr', e);
+    const file: File = e[0];
+    const formData = new FormData();
+    formData.append('thumbnail', file);
+    console.log('inprr', formData);
   }
 
 }

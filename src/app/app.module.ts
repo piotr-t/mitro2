@@ -63,7 +63,7 @@ import { FormMitroComponent } from './form-mitro/form-mitro.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
