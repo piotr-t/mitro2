@@ -2,21 +2,63 @@
   <div class="col-1"></div>
   <div class="col-10">
     <div class="row">
+
       <div class="col-12">
-        <label for="name">Imię*</label>
-        <input name="name" type="text">
+        <div class="row">
+          <div class="col-4"><label for="name">Imię*</label></div>
+          <div class="col-8"><input name="name" type="text"></div>
+        </div>
+
+
       </div>
       <div class="col-12">
-        <label for="name1">Nazwisko/Nazwa firmy*</label>
-        <input name="name1" type="text">
+        <div class="row">
+          <div class="col-4"><label for="name1">Nazwisko/Nazwa firmy*</label></div>
+          <div class="col-8"><input name="name1" type="text"></div>
+        </div>
+
       </div>
       <div class="col-12">
-        <label for="tresc">Wiadomość</label>
-        <textarea name="tresc" type="text"></textarea>
+        <div class="row">
+          <div class="col-4"><label for="tel">Telefon*</label></div>
+          <div class="col-8"><input name="tel" type="text"></div>
+        </div>
+
       </div>
       <div class="col-12">
-        <label for="download">Dodaj plik</label>
-        <input  #inpp class="custom-file-inputt" name="download" type="file" (change)="view($event.target.files)">
+        <div class="row">
+          <div class="col-4"><label for="mail">e-mail*</label></div>
+          <div class="col-8"><input name="mail" type="text"></div>
+        </div>
+
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4"><label for="woj">Województwo</label></div>
+          <div class="col-8"><input name="woj" type="text"></div>
+        </div>
+
+
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4"><label for="tresc">Wiadomość</label></div>
+          <div class="col-8"><textarea name="tresc" type="text"></textarea></div>
+        </div>
+
+
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4"><label for="download">Dodaj plik</label></div>
+          <div class="col-8">
+            <input  #inpp class="custom-file-inputt" name="download" type="file" (change)="view($event.target.files)" multiple>
+            <p>maksymalny rozmiar pliku 4 MB</p>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
     <div class="row">
