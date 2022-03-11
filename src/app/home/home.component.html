@@ -1,18 +1,39 @@
-<div class="container-fluid p-0 m-0 g-0 app__container" style="background-color: #80272f">
-  <app-header class="row fixed-top p-0 m-0 g-0"></app-header>
-  <div class="row p-0 m-0 g-0 row1"></div>
-  <div class="row p-0 m-0 g-0 content-container align-items-end justify-content-end"  style="background-color: red">
-    <section class="col-12 px-0 py-5 m-0 g-0" style="background-color: rgb(49, 10, 43)">
+<div class="container-fluid p-0 m-0 g-0 app__container">
+  <app-header class="row fixed-top p-0 m-0 g-0"  style="background-color: #ffffff"></app-header>
+  <div class="row pt-5 mt-5 m-0  g-0 content-container align-items-end justify-content-end">
+    <ng-container *ngTemplateOutlet="galery"></ng-container>
+    <section class="col-12 px-0 py-5 m-0 g-0">
       <div class="row p-0 m-0 g-0">
-        <app-article class="col-12 p-0 m-0 g-0"></app-article>
+        <app-article class="col-12 py-5 m-0 g-0"></app-article>
       </div>
     </section>
-    <section class="col-12 px-0 py-5 m-0 g-0" style="background-color: rgb(180, 135, 173)">
+    <section class="col-12 px-0 py-5 m-0 g-0">
       <div class="row p-0 m-0 g-0">
         <app-contact class="col-12 px-0 py-5 m-0 g-0"></app-contact>
-        <app-form-mitro class="col-12 p-0 m-0 g-0" style="background-color: #7e1a23"></app-form-mitro>
+        <app-form-mitro class="col-12 p-0 m-0 g-0"></app-form-mitro>
       </div>
     </section>
-    <app-footer class="col-12 p-0 m-0 g-0" style="background-color: rgb(6, 26, 8)"></app-footer>
+    <app-footer class="col-12 p-0 m-0 g-0"></app-footer>
   </div>
 </div>
+
+
+<ng-template #galery>
+  <section class="col-12 p-0 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row justify-content-center py-3">
+          <div class="col-3"><img style="width: 80%" src="./../../assets/klima.png" alt=""></div>
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/dom.jpg" alt=""></div>
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/dom 2.jpg" alt=""></div>
+        </div>
+        <div class="row justify-content-center py-3">
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/cisnienie.jpg" alt=""></div>
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/podlogowka.png" alt=""></div>
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/elektryka.jpg" alt=""></div>
+          <div class="col-3"><img style="width: 80%"  src="./../../assets/skrzynka.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-template>

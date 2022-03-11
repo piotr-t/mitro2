@@ -26,10 +26,9 @@
 .app__container{
   min-height: 100vh;
   .content-container{
-    min-height: (100vh - $headerHeight);
+    // min-height: (100vh - $headerHeight);
   }
   .row1{
     height: $headerHeight;
-    background-color: deeppink;
   }
 }

@@ -1,13 +1,19 @@
 <div class="container">
   <div class="row py-5">
-    <div class="col-1"></div>
+    <div class="col-1" routerLink="/" style="cursor: pointer"  style="font-size: max(12px, 1vw)">
+      <img style="cursor: pointer" src="./../../assets/arrow-left-circle.png" alt="">
+      Powrót</div>
     <div class="col-10 py-5">
       <div class="row">
-        <div class="col-12"><h2>Pliki do pobrania:</h2></div>
+        <div class="col-12"><h2 style="font-size: max(12px, 2vw)">Pliki do pobrania:</h2></div>
         <div class="col-12">
           <div class="row py-3">
-            <div class="col-3"><p>Przykładowy plik</p></div>
-            <div class="col-3"><a [href]="'./../../aside'" download="termet.png">Pobierz plik</a></div>
+            <div class="col-3" style="font-size: max(12px, 1.5vw)"><p>Wniosek do pobrania</p></div>
+            <div class="col-3"><a [href]="'./../../assets/deklaracja.pdf'" type="application/octet-stream" target="_blank"  style="font-size: max(12px, 1.5vw)">Pobierz plik</a></div>
+          </div>
+          <div class="row">
+            <div class="col-3"><p>Ulotka</p></div>
+            <div class="col-3"><a href="./../../assets/" download="ulotka.pdf">ulotka</a></div>
           </div>
         </div>
       </div>

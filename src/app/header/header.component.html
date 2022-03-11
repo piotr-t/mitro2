@@ -1,49 +1,39 @@
-<header class="col-12 p-0 m-0 g-0">
-  <div class="row p-0 m-0 g-0 h-100">
-    <div class="col-6 p-0 m-0 g-0 logo" style="height: 100%; background-color: #ffffff"></div>
-    <div class="col-6 p-0 m-0 g-0 h-100">
-      <div class="row p-0 m-0 g-0 h-100">
-        <div class="col-12 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
-          <div class="row p-0 m-0 g-0 h-100 align-items-center">
-            <div class="col p-0 m-0 g-0">
-              <a href="#kontakt" style=" color: rgb(29, 26, 26); text-decoration: none">
-                <div style="font-size: max(12px, 1.5vw);">KONTAKT</div>
-              </a>
-            </div>
-            <div routerLink="./Pobierz" class="col p-0 m-0 g-0" style="cursor: pointer; color: rgb(29, 26, 26)">PLIKI DO POBRANIA</div>
+<header class="col-12 p-0 m-0 g-0"  style="background-color: #ffffff">
+  <div class="row p-0 m-0 g-0 h-100 align-items-center"  style="background-color: #ffffff">
+    <div class="col-6 p-0 m-0 g-0" style="background-color: #ffffff">
+      <img src="./../../assets/Screenshot(46).png" alt="" class="logo" (load)="onLoad($event)"><!--LOGO-->
+    </div>
+    <ng-container *ngTemplateOutlet="nav"></ng-container>
+  </div>
+</header>
 
-
-            <div class="col" style="background-color: rgb(180, 159, 135)"></div>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
-          <div class="row h-100 align-items-center justify-content-center p-0 m-0 g-0">
-            <a style="font-size: max(12px, 1.5vw);color: rgb(22, 20, 20);text-decoration: none;" class="col-6" href="tel:609 244 988" >
-              <div style="color: rgb(15, 15, 15);text-decoration: none;font-size: max(12px, 1.5vw);">Tel: <span style="color: rgb(17, 16, 16);text-decoration: none;font-size: max(12px, 1.5vw);">609 244 988</span></div>
+<ng-template #nav>
+  <div class="col-6 p-0 m-0 g-0"  style="background-color: #ffffff">
+    <div class="row p-0 m-0 g-0 justify-content-center" style="background-color: #ffffff">
+      <div class="col-11 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
+        <div class="row p-0 m-0 g-0 align-items-center"  style="background-color: #ffffff">
+          <div class="col p-0 m-0 g-0">
+            <a class="" href="#kontakt" style="text-decoration: none">
+              <p style="text-align: center; font-size: max(12px, 1.5vw);">KONTAKT</p>
             </a>
+          </div>
+          <div routerLink="./Pobierz" class="col p-0 m-0 g-0" style="cursor: pointer; color: rgb(29, 26, 26)">
+            <p style="text-align: center; font-size: max(12px, 1.5vw); color:#3294fe" class=""> PLIKI DO POBRANIA</p>
+          </div>
+          <div class="d-none d-sm-block col-sm-2 " style="background-color: rgb(180, 159, 135)"></div>
+          <div class="col-12 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
+            <div class="row align-items-center justify-content-center p-0 m-0 g-0">
+              <div class="col-6">
+                <a style="font-size: max(12px, 1.5vw)" class="col-6 navbar-brand " href="tel:609 244 988" >
+                  <p style="text-align: center;font-size: max(12px, 1.5vw)"> Tel: <span style="font-size: max(12px, 1.5vw);">609 244 988</span></p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</header>
+</ng-template>
 
-<!--
-    appScroll classScroll1="headerContainer__Small" classScroll2="headerContainer__Big"
-  [@HeaderSize]="bigHeader"
-  class="container-fluid fixed-top headerContainer" >
-    <div class="row headerWrapper" >
-      <app-title class="col-5 align-self-center headerContainer__Title"></app-title>
-      <app-tel class="col-7 headerContainer__Info"></app-tel>
-        <div class="row headerContainer__Info--Slogan">
-          <div class="col-12 Slogan">
-            <h3 class="Slogan__text">INSTALACJE DLA TWOJEJ FIRMY</h3>
-          </div>
-        </div>
-      </div>
-  <app-baner></app-baner>
-  <div class="container-fluid fixed-top">
-    <div class="row  justify-content-center">
-      <div class=" anim col-8" appScroll classScroll1="anim1" classScroll2="anim2"></div>
-      <!--<app-svg class="col-7 col-sm-10 Animation fixed-top"></app-svg>-->
 

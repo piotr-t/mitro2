@@ -1,3 +1,4 @@
+
 /* You can add global styles to this file, and also import other style files */
 
   .mitro-start{
@@ -13,5 +14,11 @@
     vertical-align: middle;
 
   }
+
+  input[type=text].ng-touched.ng-invalid{
+    background-color: rgb(206, 75, 75);
+  }
+
+  p{font-size:max(12px, 1.25vw)}
 
 

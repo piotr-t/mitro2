@@ -1,9 +1,11 @@
 
 
 .custom-file-inputt{
-  border: 2 px solid black;
+  display: none;
 }
-.custom-file-input::before{
-  content:'ok działa';
-  opacity: 1;
+
+
+.labels{
+  font-size: max(12px, 1.5vw);
 }
+

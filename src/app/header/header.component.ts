@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit, ViewChild, ElementRef, HostBinding, OnChanges, Input, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostBinding, OnChanges, Input, HostListener, AfterViewChecked } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -14,30 +14,25 @@ import { Component, OnInit, ViewChild, ElementRef, HostBinding, OnChanges, Input
     ])
   ]
 })
-export class HeaderComponent implements OnInit, OnChanges {
-  bigHeader;
-
-@HostListener('window:pageshow') onLoadd(): void{
-  this.bigHeader = 'Big';
-}
+export class HeaderComponent implements OnInit{
 
 
-  @HostListener('window:scroll', ['$event']) onScroll(ev): void {
-    this.bigHeader = ( ev.target.scrollingElement.scrollTop > 300) ? 'Small' : 'Big';
-  }
+
+f = 10;
 
   constructor() { }
 
 
 
   ngOnInit(): void {
-    this.bigHeader = 'Big';
+  }
+
+  onLoad(e): void{
+    this.f = e.target.height;
+    console.log('e', e.target.height);
+
   }
 
 
-  ngOnChanges(): void {
-
-
-  }
 
 }

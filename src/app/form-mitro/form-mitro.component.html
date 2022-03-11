@@ -1,71 +1,153 @@
-<div class="row p-0 m-0 g-0"  style="background-color: rgb(135, 180, 149)">
-  <div class="col-1"></div>
-  <div class="col-10">
-    <div class="row">
-
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="name">Imię*</label></div>
-          <div class="col-8"><input name="name" type="text"></div>
-        </div>
-
-
+<div class="row p-0 m-0 g-0 justify-content-center">
+  <div class="col-11 col-sm-10 card">
+    <div class="row py-3">
+      <div class="col-12 px-5">
+        <h3 style="font-size:max(12px, 2.2vw)">Formularz kontaktowy</h3>
       </div>
+    </div>
+    <form class="row" [formGroup]="messageForm">
+
       <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="name1">Nazwisko/Nazwa firmy*</label></div>
-          <div class="col-8"><input name="name1" type="text"></div>
-        </div>
-
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="tel">Telefon*</label></div>
-          <div class="col-8"><input name="tel" type="text"></div>
-        </div>
-
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="mail">e-mail*</label></div>
-          <div class="col-8"><input name="mail" type="text"></div>
-        </div>
-
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="woj">Województwo</label></div>
-          <div class="col-8"><input name="woj" type="text"></div>
-        </div>
-
-
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="tresc">Wiadomość</label></div>
-          <div class="col-8"><textarea name="tresc" type="text"></textarea></div>
-        </div>
-
-
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-4"><label for="download">Dodaj plik</label></div>
-          <div class="col-8">
-            <input  #inpp class="custom-file-inputt" name="download" type="file" (change)="view($event.target.files)" multiple>
-            <p>maksymalny rozmiar pliku 4 MB</p>
+        <div class="row py-1">
+          <div class="col-4">
+            <div *ngIf="firstName.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+            <label for="name" class="labels">Imię*</label>
+          </div>
+          <div class="col-5 col-sm-4">
+            <input name="name" type="text" formControlName="firstName" class="form-control form-control-sm">
           </div>
         </div>
 
 
+      </div>
+      <div class="col-12">
+        <div class="row py-1">
+          <div class="col-4">
+            <div *ngIf="lastName.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+            <label for="name1" class="labels">Nazwisko/Nazwa firmy*</label>
+          </div>
+          <div class="col-5 col-sm-4">
+            <input name="name1" type="text" formControlName="lastName" class="form-control form-control-sm">
+          </div>
+        </div>
 
+      </div>
+      <div class="col-12">
+        <div class="row py-1">
+          <div class="col-4">
+            <div *ngIf="tel.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+            <label for="tel" class="labels">Telefon*</label>
+          </div>
+          <div class="col-5 col-sm-4">
+            <input name="tel" type="text" formControlName="tel" class="form-control form-control-sm">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12">
+        <div class="row py-1">
+          <div class="col-4">
+            <div *ngIf="email.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+            <label for="mail" class="labels">e-mail*</label>
+          </div>
+          <div class="col-5 col-sm-4">
+            <input name="mail" type="text" formControlName="email" class="form-control form-control-sm">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12">
+        <div class="row py-1">
+          <div class="col-4"><label for="woj" class="labels">Województwo</label></div>
+          <div class="col-5 col-sm-4">
+            <input name="woj" type="text" class="form-control form-control-sm" formControlName="woj">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-12">
+        <div class="row py-3 align-items-center">
+          <div class="col-4"><label for="tresc" class="labels">Wiadomość</label></div>
+          <div class="col-8">
+            <textarea  style="width:70%; min-height:200px;border-radius: 5px" name="tresc" type="text" formControlName="message"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col-4 pb-4">
+            <label for="download" class="labels">Dodaj plik</label>
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-12 py-3">
+                <div class="row">
+                  <div class="col-12"><button type="button" class="btn btn-info" (click)="dodajZal()" style="font-size:max(12px, 1.2vw)">Dodaj załącznik</button></div>
+                  <div class="col-12 pt-2"><p style ="font-style: italic">maksymalny rozmiar pliku 4 MB</p></div>
+                </div>
+                <input  #inpp class="custom-file-inputt" name="download" type="file" (change)="view($event.target.files)">
+              </div>
+              <div class="col-12" *ngFor="let filee of files;i as index">
+                <div class="row">
+                  <div class="col-10"><p style="color:rgb(165, 42, 42)">{{filee}}<span style="cursor: pointer" class="badge badge-danger"  (click)="delete(i)">Usuń</span></p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 py-5">
+        <div class="row">
+          <div class="col-12">
+            <div *ngIf="zgoda.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+          </div>
+        </div>
+
+        <ng-container *ngTemplateOutlet="zgoda"></ng-container>
+
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-11">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 py-5">
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6">
+            <button  type="button" class="btn btn-primary" (click)="send()" style="font-size:max(12px, 1.2vw)">Wyślij wiadomość</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-12">
+        <p style="font-size: max(12px, 1vw)">*pola wymagane</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <p>*pola wymagane</p>
-      </div>
+      <div class="col-9"></div>
+      <div class="col-3"></div>
     </div>
   </div>
-  <div class="col-1"></div>
 </div>
+
+
+<ng-template #zgoda>
+  <div class="row justify-content-center">
+    <div class="col-8 col-sm-1 py-4">
+      <div class="row justify-content-start justify-content-sm-center align-items-center h-100">
+        <input class="col-5 col-sm" style="margin: auto;" type="checkbox" class="form-check-input"  formControlName="zgoda">
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-11">
+      <p style="text-indent: 2vw; font-style: italic; font-size:max(12px, 1vw)">Wyrażam zgodę na przetwarzanie przez MITRO  Sp. z o.o.  moich danych osobowych, w szczególności mojego imienia, nazwiska, nazwy firmy, adresu e-mail, numeru telefonu w celach nawiązania ze mną kontaktu związanego z tematem mojego zgłoszenia. Podane przeze mnie dane będą przechowywane przez niezbędny do udzielenia odpowiedzi czas lub do momentu ustania dalszego kontaktu. Przyjmuję do wiadomości, iż mam prawo do przenoszenia danych lub ich sprostowania. Moja zgoda jest dobrowolna i może być wycofana w każdym czasie. Wszelkie pytania z tym związane mogę kierować na adres: mitro150@interia.pl
+      </p>
+
+    </div>
+  </div>
+</ng-template>
