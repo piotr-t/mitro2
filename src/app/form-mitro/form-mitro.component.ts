@@ -20,66 +20,35 @@ sendd = false;
 
 
 messageForm = new FormGroup({
-  firstName: new FormControl('', Validators.required),
-  lastName: new FormControl('', Validators.required),
-  tel: new FormControl('', [Validators.required, Validators.pattern('[- +()0-9]{6,}') ]),
-  email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
-  woj: new FormControl(''),
-  message: new FormControl(''),
-  zgoda: new FormControl(false, Validators.requiredTrue)
+  firstName: new FormControl('dd', Validators.required),
+  lastName: new FormControl('dd', Validators.required),
+  tel: new FormControl('123456', [Validators.required, Validators.pattern('[- +()0-9]{6,}') ]),
+  email: new FormControl('troc.piotr@gmail.com', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
+  woj: new FormControl('dd'),
+  message: new FormControl('dd'),
+  zgoda: new FormControl(true, Validators.requiredTrue)
 });
 
 get firstName(): any { return this.messageForm.get('firstName'); }
 get lastName(): any { return this.messageForm.get('lastName'); }
 get tel(): any { return this.messageForm.get('tel'); }
 get email(): any { return this.messageForm.get('email'); }
-get zgoda(): any { return this.messageForm.get('zgoda'); }
+get zgodaa(): any { return this.messageForm.get('zgoda'); }
+
+controls = [
+  {text: 'Imię*', name: 'firstName'},
+  {text: 'Nazwisko/Nazwa firmy*', name: 'lastName'},
+  {text: 'Telefon*', name: 'tel'},
+  {text: 'e-mail*', name: 'email'},
+  {text: 'Województwo', name: 'woj'}];
 
   constructor(private http: HttpClient) { }
-  options = {
-    iconsTemplate: 'font_awesome_5',
-    charCounterCount: false,
 
-    toolbarButtons:   {
-      moreText: {
-        // List of buttons used in the  group.
-        buttons: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', 'textColor', 'backgroundColor', 'inlineClass', 'inlineStyle', 'clearFormatting'],
-
-        // Alignment of the group in the toolbar.
-        align: 'left',
-
-        // By default, 3 buttons are shown in the main toolbar. The rest of them are available when using the more button.
-        buttonsVisible: 10
-      },
-
-
-      moreParagraph: {
-        buttons: ['alignLeft', 'alignCenter', 'formatOLSimple', 'alignRight', 'alignJustify', 'formatOL', 'formatUL', 'paragraphFormat', 'paragraphStyle', 'lineHeight', 'outdent', 'indent', 'quote'],
-        align: 'left',
-        buttonsVisible: 3
-      },
-
-      moreRich: {
-        buttons: ['insertLink', 'insertImage', 'insertVideo', 'insertTable', 'emoticons', 'fontAwesome', 'specialCharacters', 'embedly', 'insertFile', 'insertHR'],
-        align: 'left',
-        buttonsVisible: 3
-      },
-
-      moreMisc: {
-        buttons: ['undo', 'redo', 'fullscreen', 'print', 'getPDF', 'spellChecker', 'selectAll', 'html', 'help'],
-        align: 'right',
-        buttonsVisible: 2
-      }
-    },
-
-// Change buttons for XS screen.
-toolbarButtonsXS: [['undo', 'redo'], ['bold', 'italic', 'underline']]
-  };
 
 
   ngOnInit(): void {
     this.messageForm.valueChanges.subscribe(a => {
-      console.log(a);
+      console.log("a",a);
     });
   }
 
@@ -99,9 +68,20 @@ toolbarButtonsXS: [['undo', 'redo'], ['bold', 'italic', 'underline']]
 
   }
 
+
+
+
+
+
+
+
   send(): void{
+
     this.sendd = true;
+    console.log(this.messageForm.status);
+
     if (this.messageForm.status === 'VALID'){
+      this.sendd = false;
       console.log('this.files1', this.files1);
       const f = this.files1.map(e => {
                                       const fd = new FormData();
@@ -109,9 +89,17 @@ toolbarButtonsXS: [['undo', 'redo'], ['bold', 'italic', 'underline']]
                                       console.log('e', fd);
                                       return fd; });
 
-      from(f).pipe(endWith(this.messageForm.value), endWith({ok : true}),
-      mergeMap(a => this.http.post('https://mail.mitro.com.pl/users', a)))
-      .subscribe(d => { console.warn('d', d); });
+      from(f).pipe(endWith(this.messageForm.value ), endWith({ok : true}),
+      mergeMap(a => this.http.post('./users', a )))
+      .subscribe(
+        {
+          next(x): void { console.log('got value ' + x); },
+          error(err): void { console.error('something wrong occurred: ' + err); },
+          complete(): void {
+            this.files1 = [];
+            this.files = []; }
+        }
+);
     }
 
   }
@@ -135,3 +123,5 @@ toolbarButtonsXS: [['undo', 'redo'], ['bold', 'italic', 'underline']]
   }
 
 }
+
+

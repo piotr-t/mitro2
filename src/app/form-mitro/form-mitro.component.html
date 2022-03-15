@@ -7,65 +7,18 @@
     </div>
     <form class="row" [formGroup]="messageForm">
 
-      <div class="col-12">
+      <div *ngFor="let control of controls;index as i" class="col-12">
         <div class="row py-1">
           <div class="col-4">
-            <div *ngIf="firstName.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
-            <label for="name" class="labels">Imię*</label>
+            <div *ngIf="this[control.name]?.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+            <label for="name" class="labels">{{control.text}}</label>
           </div>
           <div class="col-5 col-sm-4">
-            <input name="name" type="text" formControlName="firstName" class="form-control form-control-sm">
+            <input name="name" type="text" [formControlName]="control.name" class="form-control form-control-sm">
           </div>
         </div>
-
-
       </div>
-      <div class="col-12">
-        <div class="row py-1">
-          <div class="col-4">
-            <div *ngIf="lastName.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
-            <label for="name1" class="labels">Nazwisko/Nazwa firmy*</label>
-          </div>
-          <div class="col-5 col-sm-4">
-            <input name="name1" type="text" formControlName="lastName" class="form-control form-control-sm">
-          </div>
-        </div>
 
-      </div>
-      <div class="col-12">
-        <div class="row py-1">
-          <div class="col-4">
-            <div *ngIf="tel.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
-            <label for="tel" class="labels">Telefon*</label>
-          </div>
-          <div class="col-5 col-sm-4">
-            <input name="tel" type="text" formControlName="tel" class="form-control form-control-sm">
-          </div>
-        </div>
-
-      </div>
-      <div class="col-12">
-        <div class="row py-1">
-          <div class="col-4">
-            <div *ngIf="email.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
-            <label for="mail" class="labels">e-mail*</label>
-          </div>
-          <div class="col-5 col-sm-4">
-            <input name="mail" type="text" formControlName="email" class="form-control form-control-sm">
-          </div>
-        </div>
-
-      </div>
-      <div class="col-12">
-        <div class="row py-1">
-          <div class="col-4"><label for="woj" class="labels">Województwo</label></div>
-          <div class="col-5 col-sm-4">
-            <input name="woj" type="text" class="form-control form-control-sm" formControlName="woj">
-          </div>
-        </div>
-
-
-      </div>
       <div class="col-12">
         <div class="row py-3 align-items-center">
           <div class="col-4"><label for="tresc" class="labels">Wiadomość</label></div>
@@ -106,7 +59,7 @@
           </div>
         </div>
 
-        <ng-container *ngTemplateOutlet="zgoda"></ng-container>
+        <ng-container *ngTemplateOutlet="zgoda; context: {messageForm: messageForm}"></ng-container>
 
         <div class="row">
           <div class="col-1"></div>
@@ -136,18 +89,21 @@
 </div>
 
 
-<ng-template #zgoda>
-  <div class="row justify-content-center">
-    <div class="col-8 col-sm-1 py-4">
-      <div class="row justify-content-start justify-content-sm-center align-items-center h-100">
-        <input class="col-5 col-sm" style="margin: auto;" type="checkbox" class="form-check-input"  formControlName="zgoda">
+<ng-template #zgoda  let-form="messageForm">
+  <ng-container [formGroup]="messageForm">
+    <div class="row justify-content-center">
+      <div class="col-12" *ngIf="zgodaa.invalid&&sendd" style="color:red; font-weight: 400; font-style: italic">Pole wymagane</div>
+      <div class="col-8 col-sm-1 py-4">
+        <div class="row justify-content-start justify-content-sm-center align-items-center h-100">
+          <input class="col-5 col-sm" style="margin: auto;" type="checkbox" class="form-check-input"  formControlName="zgoda">
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-11">
+        <p [style.color]="zgodaa.invalid&&sendd?'red':'black'" style="text-indent: 2vw; font-style: italic; font-size:max(12px, 1vw)">Wyrażam zgodę na przetwarzanie przez MITRO  Sp. z o.o.  moich danych osobowych, w szczególności mojego imienia, nazwiska, nazwy firmy, adresu e-mail, numeru telefonu w celach nawiązania ze mną kontaktu związanego z tematem mojego zgłoszenia. Podane przeze mnie dane będą przechowywane przez niezbędny do udzielenia odpowiedzi czas lub do momentu ustania dalszego kontaktu. Przyjmuję do wiadomości, iż mam prawo do przenoszenia danych lub ich sprostowania. Moja zgoda jest dobrowolna i może być wycofana w każdym czasie. Wszelkie pytania z tym związane mogę kierować na adres: mitro150@interia.pl
+        </p>
+
       </div>
     </div>
-
-    <div class="col-12 col-sm-11">
-      <p style="text-indent: 2vw; font-style: italic; font-size:max(12px, 1vw)">Wyrażam zgodę na przetwarzanie przez MITRO  Sp. z o.o.  moich danych osobowych, w szczególności mojego imienia, nazwiska, nazwy firmy, adresu e-mail, numeru telefonu w celach nawiązania ze mną kontaktu związanego z tematem mojego zgłoszenia. Podane przeze mnie dane będą przechowywane przez niezbędny do udzielenia odpowiedzi czas lub do momentu ustania dalszego kontaktu. Przyjmuję do wiadomości, iż mam prawo do przenoszenia danych lub ich sprostowania. Moja zgoda jest dobrowolna i może być wycofana w każdym czasie. Wszelkie pytania z tym związane mogę kierować na adres: mitro150@interia.pl
-      </p>
-
-    </div>
-  </div>
+  </ng-container>
 </ng-template>

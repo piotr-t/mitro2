@@ -1,34 +1,29 @@
 <header class="col-12 p-0 m-0 g-0"  style="background-color: #ffffff">
   <div class="row p-0 m-0 g-0 h-100 align-items-center"  style="background-color: #ffffff">
-    <div class="col-6 p-0 m-0 g-0" style="background-color: #ffffff">
-      <img src="./../../assets/Screenshot(46).png" alt="" class="logo" (load)="onLoad($event)"><!--LOGO-->
+    <div class="col-12 col-sm-6 p-0 m-0 g-0" style="background-color: #ffffff">
+      <img src="./../../assets/Screenshot(46).png" alt="" class="logo img-fluid col-11"><!--LOGO-->
     </div>
     <ng-container *ngTemplateOutlet="nav"></ng-container>
   </div>
 </header>
 
 <ng-template #nav>
-  <div class="col-6 p-0 m-0 g-0"  style="background-color: #ffffff">
+  <div class="col-12 col-sm-6 p-0 m-0 g-0"  style="background-color: #ffffff">
     <div class="row p-0 m-0 g-0 justify-content-center" style="background-color: #ffffff">
-      <div class="col-11 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
+      <div class="col-11 p-0 m-0 g-0" style="background-color: #ffffff">
         <div class="row p-0 m-0 g-0 align-items-center"  style="background-color: #ffffff">
           <div class="col p-0 m-0 g-0">
-            <a class="" href="#kontakt" style="text-decoration: none">
-              <p style="text-align: center; font-size: max(12px, 1.5vw);">KONTAKT</p>
+            <a href="#kontakt" style="text-decoration: none">
+              <p style="text-align: center; font-size: max(12px, 1.5vw);" class=" p-0 m-0 g-0 ">KONTAKT</p>
             </a>
           </div>
           <div routerLink="./Pobierz" class="col p-0 m-0 g-0" style="cursor: pointer; color: rgb(29, 26, 26)">
-            <p style="text-align: center; font-size: max(12px, 1.5vw); color:#3294fe" class=""> PLIKI DO POBRANIA</p>
+            <p style="text-align: center; font-size: max(12px, 1.5vw); color:#3294fe" class=" p-0 m-0 g-0 "> PLIKI DO POBRANIA</p>
           </div>
-          <div class="d-none d-sm-block col-sm-2 " style="background-color: rgb(180, 159, 135)"></div>
-          <div class="col-12 p-0 m-0 g-0 h-50" style="background-color: #ffffff">
-            <div class="row align-items-center justify-content-center p-0 m-0 g-0">
-              <div class="col-6">
-                <a style="font-size: max(12px, 1.5vw)" class="col-6 navbar-brand " href="tel:609 244 988" >
-                  <p style="text-align: center;font-size: max(12px, 1.5vw)"> Tel: <span style="font-size: max(12px, 1.5vw);">609 244 988</span></p>
-                </a>
-              </div>
-            </div>
+          <div class="col p-0 m-0 g-0" style="background-color: #ffffff">
+            <a href="tel:609 244 988" >
+              <p style="text-align: center; font-size: max(12px, 1.5vw);" class=" p-0 m-0 g-0 ">Tel: 609 244 988</p>
+            </a>
           </div>
         </div>
       </div>

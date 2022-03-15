@@ -25,7 +25,6 @@ import { Article2Component } from './article/article2/article2.component';
 import { Article3Component } from './article/article3/article3.component';
 import { FormMitroComponent } from './form-mitro/form-mitro.component';
 import { DownloadFileComponent } from './download-file/download-file.component';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 
 
@@ -54,8 +53,7 @@ import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
   ],
   imports: [
-    FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

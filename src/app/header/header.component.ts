@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit{
 
 
 
-f = 10;
+// f = 10;
 
   constructor() { }
 
@@ -28,8 +28,8 @@ f = 10;
   }
 
   onLoad(e): void{
-    this.f = e.target.height;
-    console.log('e', e.target.height);
+    // this.f = e.target.height;
+    // console.log('e', e.target.height);
 
   }
 
